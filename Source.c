@@ -2,10 +2,14 @@
 #include <stdio.h>
 #include <locale.h>
 int main() {
+	setlocale(LC_CTYPE, "RUS");
 	int a, b;
 	double area;
 	double perimetr;
 	printf("введите длину стороны А в см:");
+	scanf("%d", &a);
+
+	printf("введите длину стороны B в см:");
 	scanf("%d", &b);
 	area = a + b;
 	perimetr = 2 * (a + b);
